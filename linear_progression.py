@@ -11,7 +11,7 @@ def linear_regression(coordinates_list: list):
         sigma_y = sigma_y + coordinate[1]
         sigma_y_square = sigma_y_square + (coordinate[1] ** 2)
         sigma_xy = sigma_xy + (coordinate[0] * coordinate[1])
-        n = n + 1  # n = the number if coordinates
+        n = n + 1  # n = the number of coordinates
 
     y_intersect = ((sigma_y * sigma_x_square) - (sigma_x * sigma_xy)) / (
         (n * sigma_x_square) - (sigma_x**2)
